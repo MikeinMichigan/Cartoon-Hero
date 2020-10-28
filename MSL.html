@@ -4,16 +4,37 @@
 <head>
 	<title>MSL</title>
 	
-	<header>The Password is Legit, Welcome Comrade</header>
+	<header id="password-conf">The Password is Legit, Welcome Comrade</header>
 
 	<style type="text/css">
+		#password-conf {
+			font-family: Century;
+		}
+		body {
+			background: url("https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png");
+		}
 		h1{
 			font-size: 50px;
-			color: brown;
+			font-family: Lobster,monospace;
+			color: rgb(0,118,182);
 			text-align: center;
-		}
+			position:relative;
+			top:20px;
+			width:50%;
+		} 
+		a:hover {
+			color:blue;
+			/*		changes all anchor links to be blue when hovering over them					
+*/		}
 		#user-profile-form {
 			background-color: red;
+			width:50%;
+			float:right;
+			background: linear-gradient(35deg,#CCFFFF,#FFCCCC);
+		}
+		#google {
+			position:relative;
+			bottom: 15px;
 		}
 		ul{
 			font-family:Lobster;
@@ -21,12 +42,21 @@
 		}
 		.thick-green-border {
 			border-width:10px;
-			border-color: lightgray;
+			border-color: rgb(176,183,188);
 			border-style: solid;
-			border-radius: 50%;
+			border-radius: 20px;
 		}
 		.silver-background {
 			background-color: silver;
+		}
+		img {
+			display:block;
+			margin:left;
+/*			turn img into block element and auto center*/
+			
+		}
+		button{
+			background-color: #FF790E;
 		}
 	</style>
 
@@ -35,7 +65,7 @@
 <body>
 
 	
-	<h1 class="thick-green-border">Welcome to the Multi-Sport League</h1>
+	
 		<div >
 			<form id="user-profile-form"action="#">
 				<label for="Hardcore">
@@ -50,8 +80,9 @@
 				<input type="text"required placeholder="Tell me your Name">
 				<button type="Submit">This Button submits the FORM</button>		
 			</form>
-
-		</div>	
+			
+		</div>
+	<h1 class="thick-green-border">The Multi-Sport League</h1>	
 	<img src="img/Jack.jpg"class="thick-green-border"><br>
 		<div>
 			<ul>
@@ -61,7 +92,7 @@
 			</ul>
 		</div>
 	
-	<a href="https://www.google.com" target="_blank">Google</a>
+	<a id="google" href="https://www.google.com" target="_blank">Google</a>
 	
 	<footer class="silver-background">Made By MikeinMichigan</footer>
 	
