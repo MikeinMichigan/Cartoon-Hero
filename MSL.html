@@ -1,5 +1,6 @@
 <DOCTYPE html>
 <html>
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 <head>
 	<title>MSL</title>
 	
@@ -9,9 +10,24 @@
 		h1{
 			font-size: 50px;
 			color: brown;
+			text-align: center;
 		}
-
-
+		#user-profile-form {
+			background-color: red;
+		}
+		ul{
+			font-family:Lobster;
+			font-size:50px;
+		}
+		.thick-green-border {
+			border-width:10px;
+			border-color: lightgray;
+			border-style: solid;
+			border-radius: 50%;
+		}
+		.silver-background {
+			background-color: silver;
+		}
 	</style>
 
 
@@ -19,9 +35,9 @@
 <body>
 
 	
-	<h1>Welcome to the Multi-Sport League</h1>
-		<div>
-			<form action="#">
+	<h1 class="thick-green-border">Welcome to the Multi-Sport League</h1>
+		<div >
+			<form id="user-profile-form"action="#">
 				<label for="Hardcore">
 					<input id="Hardcore" value="hardcore"type="radio" name="hcsc">HARDCORE
 				</label>
@@ -32,23 +48,22 @@
 					<input id="terms" value="(sets the name = the value when sending data off)"type="checkbox"name="terms">TERMS AND CONDITIONS
 				</label>
 				<input type="text"required placeholder="Tell me your Name">
-				<button type="Submit">This Button submits the FORM</button>
-				
-				
+				<button type="Submit">This Button submits the FORM</button>		
 			</form>
 
 		</div>	
-	<img src="img/Jack.jpg"><br>
+	<img src="img/Jack.jpg"class="thick-green-border"><br>
+		<div>
+			<ul>
+				<li><p><a href="https://www.playyourcourt.com"target="_blank"title="Get your ligaments together">Tennis</a></p></li>
+		
+				<li><a href="https://www.freecodecamp.org"target="_blank"title="Learn to CODE">Coding</a></li>
+			</ul>
+		</div>
 	
-	<ul>
-		<li><p><a href="https://www.playyourcourt.com"target="_blank"title="Get your ligaments together">Tennis</a></p></li>
+	<a href="https://www.google.com" target="_blank">Google</a>
 	
-		<li><a href="https://www.freecodecamp.org"target="_blank"title="Learn to CODE">Coding</a></li>
-	</ul>
-	
-	<a href="www.google.com" target="_blank">Google</a>
-	
-	<footer>Made By MikeinMichigan</footer>
+	<footer class="silver-background">Made By MikeinMichigan</footer>
 	
 </body>
 
