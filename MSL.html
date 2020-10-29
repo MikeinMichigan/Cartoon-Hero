@@ -29,8 +29,8 @@
 		#user-profile-form {
 			background-color: red;
 			width:50%;
-			float:right;
 			background: linear-gradient(35deg,#CCFFFF,#FFCCCC);
+
 		}
 		#google {
 			position:relative;
@@ -53,10 +53,32 @@
 			display:block;
 			margin:left;
 /*			turn img into block element and auto center*/
+			max-width:100%;
+			height:auto;
+			/*The max-width of 100% will make sure the image is never wider than the container it is in when zooming, and the height of auto will make the image keep its original aspect ratio.*/
 			
 		}
 		button{
 			background-color: #FF790E;
+		}
+		button:hover {
+    		animation-name: background-color;
+    		animation-duration: 10s;
+    		animation-fill-mode:forwards;/*keeps the animation on last frame instead of reverting to original color*/
+    		animation-iteration-count:infinite;
+    		animation-timing-function:ease-out;
+  		}
+  		@keyframes background-color{
+    		0%{
+      			background-color:#4791d0;
+		    }
+		    100%{
+		    	background-color: rgb(176,183,188);
+		    }
+		 }
+		div{
+			display:flex;
+			justify-content:flex-end;
 		}
 	</style>
 
@@ -64,8 +86,10 @@
 </head>
 <body>
 
-	
-	
+	<!-- <audio id = "evil-laugh" controls>
+			<source src="website" type="something/mpg>"
+		
+		</audio> -->	
 		<div >
 			<form id="user-profile-form"action="#">
 				<label for="Hardcore">
@@ -77,24 +101,36 @@
 				<label for="terms">
 					<input id="terms" value="(sets the name = the value when sending data off)"type="checkbox"name="terms">TERMS AND CONDITIONS
 				</label>
+				
+ 
 				<input type="text"required placeholder="Tell me your Name">
 				<button type="Submit">This Button submits the FORM</button>		
 			</form>
-			
 		</div>
+	
+
 	<h1 class="thick-green-border">The Multi-Sport League</h1>	
-	<img src="img/Jack.jpg"class="thick-green-border"><br>
-		<div>
+	
+	<figure>
+  		<img src="img/Jack.jpg"class="thick-green-border">
+  			<br>
+  			<figcaption>
+    			*Thoughtful FIG-Caption*
+  			</figcaption>
+	</figure>
+
+	
+		<nav>
 			<ul>
-				<li><p><a href="https://www.playyourcourt.com"target="_blank"title="Get your ligaments together">Tennis</a></p></li>
+				<li><p><a accesskey="t"href="https://www.playyourcourt.com"target="_blank"title="Get your ligaments together">Tennis</a></p></li>
 		
-				<li><a href="https://www.freecodecamp.org"target="_blank"title="Learn to CODE">Coding</a></li>
+				<li><a accesskey="c"href="https://www.freecodecamp.org"target="_blank"title="Learn to CODE">Coding</a></li>
 			</ul>
-		</div>
+		</nav><!-- better practice than using div for links.. -->
 	
-	<a id="google" href="https://www.google.com" target="_blank">Google</a>
+	<a accesskey="g"id="google" href="https://www.google.com" target="_blank">Google</a>
 	
-	<footer class="silver-background">Made By MikeinMichigan</footer>
+	<footer class="silver-background">Made By MikeinMichigan ESTABLISHED:<time datetime="2020-10-01">10/1/20 in the USA</time></footer>
 	
 </body>
 
