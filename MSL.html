@@ -1,97 +1,22 @@
 <DOCTYPE html>
 <html>
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="CSS/msl.css">
 <head>
 	<title>MSL</title>
 	
-	<header id="password-conf">The Password is Legit, Welcome Comrade</header>
-
-	<style type="text/css">
-		#password-conf {
-			font-family: Century;
-		}
-		body {
-			background: url("https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png");
-		}
-		h1{
-			font-size: 50px;
-			font-family: Lobster,monospace;
-			color: rgb(0,118,182);
-			text-align: center;
-			position:relative;
-			top:20px;
-			width:50%;
-		} 
-		a:hover {
-			color:blue;
-			/*		changes all anchor links to be blue when hovering over them					
-*/		}
-		#user-profile-form {
-			background-color: red;
-			width:50%;
-			background: linear-gradient(35deg,#CCFFFF,#FFCCCC);
-
-		}
-		#google {
-			position:relative;
-			bottom: 15px;
-		}
-		ul{
-			font-family:Lobster;
-			font-size:50px;
-		}
-		.thick-green-border {
-			border-width:10px;
-			border-color: rgb(176,183,188);
-			border-style: solid;
-			border-radius: 20px;
-		}
-		.silver-background {
-			background-color: silver;
-		}
-		img {
-			display:block;
-			margin:left;
-/*			turn img into block element and auto center*/
-			max-width:100%;
-			height:auto;
-			/*The max-width of 100% will make sure the image is never wider than the container it is in when zooming, and the height of auto will make the image keep its original aspect ratio.*/
-			
-		}
-		button{
-			background-color: #FF790E;
-		}
-		button:hover {
-    		animation-name: background-color;
-    		animation-duration: 10s;
-    		animation-fill-mode:forwards;/*keeps the animation on last frame instead of reverting to original color*/
-    		animation-iteration-count:infinite;
-    		animation-timing-function:ease-out;
-  		}
-  		@keyframes background-color{
-    		0%{
-      			background-color:#4791d0;
-		    }
-		    100%{
-		    	background-color: rgb(176,183,188);
-		    }
-		 }
-		div{
-			display:flex;
-			justify-content:flex-end;
-		}
-	</style>
-
-
 </head>
-<body>
+<body><center>
 
+	<div class='head-wrap'>
+	<header>The Password is Legit, Welcome Comrade</header>
 	<!-- <audio id = "evil-laugh" controls>
 			<source src="website" type="something/mpg>"
 		
-		</audio> -->	
-		<div >
-			<form id="user-profile-form"action="#">
+		</audio> -->
+			
+		<div class='form'>
+			<form id="user-profile-form" action="#">
 				<label for="Hardcore">
 					<input id="Hardcore" value="hardcore"type="radio" name="hcsc">HARDCORE
 				</label>
@@ -107,7 +32,7 @@
 				<button type="Submit">This Button submits the FORM</button>		
 			</form>
 		</div>
-	
+	</div>	
 
 	<h1 class="thick-green-border">The Multi-Sport League</h1>	
 	
@@ -120,18 +45,24 @@
 	</figure>
 
 	
-		<nav>
+		<nav id='nav-bar'>
 			<ul>
-				<li><p><a accesskey="t"href="https://www.playyourcourt.com"target="_blank"title="Get your ligaments together">Tennis</a></p></li>
+				<li><a accesskey="t"href="https://www.playyourcourt.com"target="_blank"title="Get your ligaments together">Tennis</a></li>
 		
 				<li><a accesskey="c"href="https://www.freecodecamp.org"target="_blank"title="Learn to CODE">Coding</a></li>
+
+				<li><a accesskey="l"href="https://www.memrize.com"target="_blank"title="Languages Help You Think Gooder">Languages</a></li>
+
+				<li><a accesskey="k"href="https://www.khanacademy.org/profile/OldNoob/courses"target="_blank"title="Re-Learn Highschool">High School</a></li>
+
+				<li><a accesskey="t"href="https://10fastfingers.com/typing-test/english"target="_blank"title="Typing">Typing</a></li>
 			</ul>
 		</nav><!-- better practice than using div for links.. -->
 	
 	<a accesskey="g"id="google" href="https://www.google.com" target="_blank">Google</a>
 	
 	<footer class="silver-background">Made By MikeinMichigan ESTABLISHED:<time datetime="2020-10-01">10/1/20 in the USA</time></footer>
-	
+</center>
 </body>
 
 

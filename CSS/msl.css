@@ -1,0 +1,78 @@
+header {
+			font-family: Century;
+		}
+.head-wrap{
+	width:50%;
+	background: linear-gradient(35deg,#CCFFFF,#FFCCCC);
+	
+}
+body {
+			background: url("https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png");
+			
+		}
+h1{
+			font-size: 50px;
+			font-family: Lobster,monospace;
+			color: rgb(0,118,182);
+			text-align: center;
+			position:relative;
+			top:20px;
+			width:50%;
+		} 
+a:hover {
+			color:orange;
+			/*		changes all anchor links to be blue when hovering over them					
+*/		}
+.form {
+			
+
+		}
+#google {
+			position:relative;
+			bottom: 15px;
+		}
+ul{
+			font-family:Lobster;
+			font-size:50px;
+
+		}
+li {
+	list-style-type:none;
+}
+.thick-green-border {
+			border-width:10px;
+			border-color: rgb(176,183,188);
+			border-style: solid;
+			border-radius: 20px;
+		}
+.silver-background {
+			background-color: silver;
+		}
+img {
+			display:block;
+			margin:left;
+/*			turn img into block element and auto center*/
+			max-width:100%;
+			height:auto;
+			/*The max-width of 100% will make sure the image is never wider than the container it is in when zooming, and the height of auto will make the image keep its original aspect ratio.*/
+			
+		}
+button{
+			background-color: #FF790E;
+		}
+button:hover {
+    		animation-name: background-color;
+    		animation-duration: 10s;
+    		animation-fill-mode:forwards;/*keeps the animation on last frame instead of reverting to original color*/
+    		animation-iteration-count:infinite;
+    		animation-timing-function:ease-out;
+  		}
+@keyframes background-color{
+    		0%{
+      			background-color:#4791d0;
+		    }
+		    100%{
+		    	background-color: rgb(176,183,188);
+		    }
+		 }
+	
